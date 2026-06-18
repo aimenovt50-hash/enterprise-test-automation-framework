@@ -1,0 +1,9 @@
+name: dev
+base_url: https://dev.example.com
+api_url: https://dev-api.example.com
+credentials:
+  admin_email: admin@dev.example.com
+  admin_password: DevAdmin123!
+features:
+  new_dashboard: true
+  beta_checkout: true

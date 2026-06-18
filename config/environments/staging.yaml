@@ -1,0 +1,9 @@
+name: staging
+base_url: https://demowebshop.tricentis.com
+api_url: https://staging-api.example.com
+credentials:
+  admin_email: admin@staging.example.com
+  admin_password: StagingAdmin123!
+features:
+  new_dashboard: true
+  beta_checkout: false

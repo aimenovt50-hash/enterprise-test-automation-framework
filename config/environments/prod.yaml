@@ -1,0 +1,9 @@
+name: prod
+base_url: https://app.example.com
+api_url: https://api.example.com
+credentials:
+  admin_email: admin@example.com
+  admin_password: ""
+features:
+  new_dashboard: false
+  beta_checkout: false

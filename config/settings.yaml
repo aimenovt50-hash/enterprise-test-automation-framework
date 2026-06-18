@@ -1,0 +1,9 @@
+name: enterprise-saas
+timeout_ms: 15000
+retry:
+  max_attempts: 3
+  delay_seconds: 1
+reporting:
+  screenshots_on_failure: true
+  video_on_failure: false
+  trace_on_failure: false
