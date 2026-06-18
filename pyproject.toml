@@ -1,0 +1,26 @@
+[project]
+name = "enterprise-test-automation-framework"
+version = "1.0.0"
+description = "Enterprise UI test automation framework for SaaS products"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+addopts = "-v --strict-markers --alluredir=allure-results --reruns=2 --reruns-delay=1"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+markers = [
+    "smoke: Quick smoke checks for critical paths.",
+    "e2e: End-to-end UI scenarios.",
+    "regression: Full regression suite.",
+    "auth: Authentication-related tests.",
+    "dashboard: Dashboard-related tests.",
+    "negative: Negative and validation scenarios.",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
